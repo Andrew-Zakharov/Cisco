@@ -1,0 +1,82 @@
+May 01 12:55:55.666 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+May 01 12:55:55.666 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59169.
+May 01 12:55:55.680 HYPERVISOR: exec_cmd: hypervisor version 
+May 01 12:55:55.680 HYPERVISOR: exec_cmd: hypervisor working_dir /root/GNS3/projects/1/project-files/dynamips 
+May 01 12:55:55.680 GENERAL: working_dir=/root/GNS3/projects/1/project-files/dynamips
+May 01 12:55:55.681 HYPERVISOR: exec_cmd: vm create R6 10 c3600 
+May 01 12:55:55.681 VM: VM R6 created.
+May 01 12:55:55.682 HYPERVISOR: exec_cmd: vm set_con_tcp_port R6 5002 
+May 01 12:55:55.682 HYPERVISOR: exec_cmd: c3600 get_mac_addr R6 
+May 01 12:55:55.683 HYPERVISOR: exec_cmd: c3600 set_chassis R6 3660 
+May 01 12:55:55.684 HYPERVISOR: exec_cmd: vm set_ram R6 192 
+May 01 12:55:55.685 HYPERVISOR: exec_cmd: vm set_ios R6 /root/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+May 01 12:55:55.685 HYPERVISOR: exec_cmd: vm set_nvram R6 256 
+May 01 12:55:55.686 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 12:55:55.687 HYPERVISOR: exec_cmd: vm slot_add_binding R6 1 0 NM-1FE-TX 
+May 01 12:55:55.687 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 12:55:55.688 HYPERVISOR: exec_cmd: vm slot_add_binding R6 2 0 NM-1FE-TX 
+May 01 12:55:55.689 HYPERVISOR: exec_cmd: vm set_config R6 configs/i10_startup-config.cfg 
+May 01 12:56:39.520 HYPERVISOR: exec_cmd: nio create_udp udp-510f716c-32b0-4164-b656-a74d7a1ecc1d 10013 127.0.0.1 10012 
+May 01 12:56:39.527 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 0 udp-510f716c-32b0-4164-b656-a74d7a1ecc1d 
+May 01 12:56:39.530 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 12:56:45.320 HYPERVISOR: exec_cmd: nio create_udp udp-c19ab3ae-d4b4-4ffe-9589-951cd42ca273 10015 127.0.0.1 10014 
+May 01 12:56:45.322 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 1 udp-c19ab3ae-d4b4-4ffe-9589-951cd42ca273 
+May 01 12:56:45.324 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 12:56:57.237 HYPERVISOR: exec_cmd: nio create_udp udp-09313afb-5737-4cd1-9db7-0f3d97571cdf 10018 127.0.0.1 10019 
+May 01 12:56:57.237 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 1 0 udp-09313afb-5737-4cd1-9db7-0f3d97571cdf 
+May 01 12:56:57.238 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 12:57:32.033 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 12:57:36.244 HYPERVISOR: exec_cmd: vm extract_config R6 
+May 01 14:23:32.573 HYPERVISOR: exec_cmd: vm extract_config R6 
+May 01 14:37:40.640 HYPERVISOR: exec_cmd: vm extract_config R6 
+May 01 14:42:33.043 HYPERVISOR: exec_cmd: vm extract_config R6 
+May 01 14:51:52.989 HYPERVISOR: exec_cmd: vm set_ghost_status R6 2 
+May 01 14:51:52.989 HYPERVISOR: exec_cmd: vm set_ghost_file R6 c3660-jk9o3s-mz.124-25d.image-192.ghost 
+May 01 14:51:52.990 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 14:51:52.991 HYPERVISOR: exec_cmd: vm start R6 
+May 01 14:53:37.915 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 14:53:37.915 HYPERVISOR: exec_cmd: vm suspend R6 
+May 01 14:55:16.239 HYPERVISOR: exec_cmd: vm extract_config R6 
+May 01 15:21:34.409 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 15:21:34.409 HYPERVISOR: exec_cmd: vm resume R6 
+May 01 15:21:55.779 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 15:21:55.780 HYPERVISOR: exec_cmd: vm suspend R6 
+May 01 15:22:01.768 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 15:22:01.769 HYPERVISOR: exec_cmd: vm resume R6 
+May 01 15:40:12.471 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 15:40:12.474 HYPERVISOR: exec_cmd: vm suspend R6 
+May 01 15:41:02.139 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 15:41:02.140 HYPERVISOR: exec_cmd: vm resume R6 
+May 01 16:04:20.371 HYPERVISOR: exec_cmd: nio bind_filter udp-c19ab3ae-d4b4-4ffe-9589-951cd42ca273 2 capture 
+May 01 16:04:20.371 HYPERVISOR: exec_cmd: nio setup_filter udp-c19ab3ae-d4b4-4ffe-9589-951cd42ca273 2 en10mb /root/GNS3/projects/1/project-files/captures/R6_FastEthernet0-1_to_R3_FastEthernet1-0.pcap 
+May 01 16:05:16.134 HYPERVISOR: exec_cmd: nio bind_filter udp-510f716c-32b0-4164-b656-a74d7a1ecc1d 2 capture 
+May 01 16:05:16.135 HYPERVISOR: exec_cmd: nio setup_filter udp-510f716c-32b0-4164-b656-a74d7a1ecc1d 2 en10mb /root/GNS3/projects/1/project-files/captures/R6_FastEthernet0-0_to_R1_FastEthernet0-0.pcap 
+May 01 16:14:33.930 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 16:14:33.940 HYPERVISOR: exec_cmd: vm suspend R6 
+May 01 16:19:50.908 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 16:19:50.912 HYPERVISOR: exec_cmd: vm resume R6 
+May 01 16:53:46.441 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 16:53:46.445 HYPERVISOR: exec_cmd: vm suspend R6 
+May 01 16:57:13.107 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 16:57:13.110 HYPERVISOR: exec_cmd: vm resume R6 
+May 01 17:29:42.103 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 17:29:42.104 HYPERVISOR: exec_cmd: vm slot_disable_nio R6 0 1 
+May 01 17:29:42.113 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R6 0 1 
+May 01 17:29:42.114 HYPERVISOR: exec_cmd: nio unbind_filter udp-c19ab3ae-d4b4-4ffe-9589-951cd42ca273 2 
+May 01 17:29:42.114 HYPERVISOR: exec_cmd: nio delete udp-c19ab3ae-d4b4-4ffe-9589-951cd42ca273 
+May 01 17:30:00.967 HYPERVISOR: exec_cmd: nio create_udp udp-142c4160-8004-493d-88a9-8eadb0a88d24 10014 127.0.0.1 10015 
+May 01 17:30:00.968 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 1 udp-142c4160-8004-493d-88a9-8eadb0a88d24 
+May 01 17:30:00.969 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 17:30:00.978 HYPERVISOR: exec_cmd: vm slot_enable_nio R6 0 1 
+May 01 17:36:03.405 HYPERVISOR: exec_cmd: vm extract_config R6 
+May 01 17:36:04.669 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 17:36:04.669 HYPERVISOR: exec_cmd: vm stop R6 
+May 01 17:36:04.868 VM: VM R6 shutdown.
+May 01 17:36:04.871 HYPERVISOR: exec_cmd: vm extract_config R6 
+May 01 17:36:08.758 HYPERVISOR: exec_cmd: vm get_status R6 
+May 01 17:36:08.760 HYPERVISOR: exec_cmd: vm extract_config R6 
+May 01 17:36:08.764 HYPERVISOR: exec_cmd: vm delete R6 
+May 01 17:36:08.764 VM: VM R6 destroyed.
+May 01 17:36:08.767 HYPERVISOR: exec_cmd: hypervisor stop 
+May 01 17:36:08.999 HYPERVISOR: Stopped.
+May 01 17:36:08.999 GENERAL: reset done.

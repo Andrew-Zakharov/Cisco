@@ -1,0 +1,54 @@
+May 02 14:03:49.921 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+May 02 14:03:49.921 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 42559.
+May 02 14:03:49.930 HYPERVISOR: exec_cmd: hypervisor version 
+May 02 14:03:49.931 HYPERVISOR: exec_cmd: hypervisor working_dir /root/GNS3/projects/1/project-files/dynamips 
+May 02 14:03:49.931 GENERAL: working_dir=/root/GNS3/projects/1/project-files/dynamips
+May 02 14:03:49.931 HYPERVISOR: exec_cmd: vm create R9 7 c3600 
+May 02 14:03:49.931 VM: VM R9 created.
+May 02 14:03:49.932 HYPERVISOR: exec_cmd: vm set_con_tcp_port R9 5004 
+May 02 14:03:49.932 HYPERVISOR: exec_cmd: c3600 get_mac_addr R9 
+May 02 14:03:49.932 HYPERVISOR: exec_cmd: c3600 set_chassis R9 3660 
+May 02 14:03:49.933 HYPERVISOR: exec_cmd: vm set_ram R9 192 
+May 02 14:03:49.933 HYPERVISOR: exec_cmd: vm set_ios R9 /root/GNS3/images/IOS/c1700-sy-mz.122-15.t17.image 
+May 02 14:03:49.934 HYPERVISOR: exec_cmd: vm set_nvram R9 256 
+May 02 14:03:49.934 HYPERVISOR: exec_cmd: vm get_status R9 
+May 02 14:03:49.935 HYPERVISOR: exec_cmd: vm slot_add_binding R9 1 0 NM-1FE-TX 
+May 02 14:03:49.935 HYPERVISOR: exec_cmd: vm get_status R9 
+May 02 14:03:49.935 HYPERVISOR: exec_cmd: vm slot_add_binding R9 2 0 NM-1FE-TX 
+May 02 14:03:49.936 HYPERVISOR: exec_cmd: vm get_status R9 
+May 02 14:03:49.936 HYPERVISOR: exec_cmd: vm slot_add_binding R9 3 0 NM-1FE-TX 
+May 02 14:03:49.937 HYPERVISOR: exec_cmd: vm set_config R9 configs/i7_startup-config.cfg 
+May 02 14:04:01.719 HYPERVISOR: exec_cmd: nio create_udp udp-1e51e47a-2314-4086-8bce-b98a011094ea 10020 127.0.0.1 10021 
+May 02 14:04:01.720 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 0 0 udp-1e51e47a-2314-4086-8bce-b98a011094ea 
+May 02 14:04:01.720 HYPERVISOR: exec_cmd: vm get_status R9 
+May 02 14:06:00.144 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+May 02 14:06:00.145 VM: VM Ghost created.
+May 02 14:06:00.147 HYPERVISOR: exec_cmd: vm set_ios Ghost /root/GNS3/images/IOS/c1700-sy-mz.122-15.t17.image 
+May 02 14:06:00.147 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 02 14:06:00.148 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c1700-sy-mz.122-15.t17.image-192.ghost 
+May 02 14:06:00.148 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+May 02 14:06:00.149 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 02 14:06:00.149 HYPERVISOR: exec_cmd: vm start Ghost 
+May 02 14:06:00.367 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 02 14:06:00.368 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 02 14:06:00.609 VM: VM Ghost shutdown.
+May 02 14:06:00.609 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 02 14:06:00.610 VM: VM Ghost destroyed.
+May 02 14:06:00.610 HYPERVISOR: exec_cmd: vm set_ghost_status R9 2 
+May 02 14:06:00.611 HYPERVISOR: exec_cmd: vm set_ghost_file R9 c1700-sy-mz.122-15.t17.image-192.ghost 
+May 02 14:06:00.611 HYPERVISOR: exec_cmd: vm get_status R9 
+May 02 14:06:00.613 HYPERVISOR: exec_cmd: vm start R9 
+May 02 14:06:08.595 HYPERVISOR: exec_cmd: vm get_status R9 
+May 02 14:06:08.598 HYPERVISOR: exec_cmd: vm suspend R9 
+May 02 14:06:13.546 HYPERVISOR: exec_cmd: vm get_status R9 
+May 02 14:06:13.547 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R9 0 0 
+May 02 14:06:13.552 HYPERVISOR: exec_cmd: nio delete udp-1e51e47a-2314-4086-8bce-b98a011094ea 
+May 02 14:06:13.556 HYPERVISOR: exec_cmd: vm get_status R9 
+May 02 14:06:13.556 HYPERVISOR: exec_cmd: vm stop R9 
+May 02 14:06:13.667 VM: VM R9 shutdown.
+May 02 14:06:13.668 HYPERVISOR: exec_cmd: vm extract_config R9 
+May 02 14:06:13.669 HYPERVISOR: exec_cmd: vm delete R9 
+May 02 14:06:13.669 VM: VM R9 destroyed.
+May 02 14:06:13.669 HYPERVISOR: exec_cmd: hypervisor stop 
+May 02 14:06:14.055 HYPERVISOR: Stopped.
+May 02 14:06:14.055 GENERAL: reset done.

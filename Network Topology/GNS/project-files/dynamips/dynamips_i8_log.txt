@@ -1,0 +1,56 @@
+May 02 14:38:00.352 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+May 02 14:38:00.352 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60993.
+May 02 14:38:00.386 HYPERVISOR: exec_cmd: hypervisor version 
+May 02 14:38:00.388 HYPERVISOR: exec_cmd: hypervisor working_dir /root/GNS3/projects/1/project-files/dynamips 
+May 02 14:38:00.388 GENERAL: working_dir=/root/GNS3/projects/1/project-files/dynamips
+May 02 14:38:00.390 HYPERVISOR: exec_cmd: vm create R7 11 c3600 
+May 02 14:38:00.390 VM: VM R7 created.
+May 02 14:38:00.392 HYPERVISOR: exec_cmd: vm set_con_tcp_port R7 5003 
+May 02 14:38:00.394 HYPERVISOR: exec_cmd: c3600 get_mac_addr R7 
+May 02 14:38:00.396 HYPERVISOR: exec_cmd: c3600 set_chassis R7 3660 
+May 02 14:38:00.398 HYPERVISOR: exec_cmd: vm set_ram R7 192 
+May 02 14:38:00.401 HYPERVISOR: exec_cmd: vm set_ios R7 /root/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+May 02 14:38:00.403 HYPERVISOR: exec_cmd: c3600 set_mac_addr R7 cc0b.7a33.0000 
+May 02 14:38:00.410 HYPERVISOR: exec_cmd: vm set_nvram R7 256 
+May 02 14:38:00.412 HYPERVISOR: exec_cmd: vm get_status R7 
+May 02 14:38:00.414 HYPERVISOR: exec_cmd: vm slot_add_binding R7 1 0 NM-1FE-TX 
+May 02 14:38:00.426 HYPERVISOR: exec_cmd: vm get_status R7 
+May 02 14:38:00.428 HYPERVISOR: exec_cmd: vm slot_add_binding R7 2 0 NM-1FE-TX 
+May 02 14:38:00.428 HYPERVISOR: exec_cmd: vm set_config R7 configs/i11_startup-config.cfg 
+May 02 14:38:00.846 HYPERVISOR: exec_cmd: nio create_udp udp-42a84ba8-4cc1-4f8d-a41f-6c1b965e0599 10014 127.0.0.1 10013 
+May 02 14:38:00.852 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 1 udp-42a84ba8-4cc1-4f8d-a41f-6c1b965e0599 
+May 02 14:38:00.853 HYPERVISOR: exec_cmd: vm get_status R7 
+May 02 14:38:00.880 HYPERVISOR: exec_cmd: nio create_udp udp-2ae71ea3-ba2e-40b5-bbb9-163ac5341528 10016 127.0.0.1 10017 
+May 02 14:38:00.885 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 1 0 udp-2ae71ea3-ba2e-40b5-bbb9-163ac5341528 
+May 02 14:38:00.890 HYPERVISOR: exec_cmd: vm get_status R7 
+May 02 14:38:00.909 HYPERVISOR: exec_cmd: nio create_udp udp-de13dbe9-b3c5-456b-8a74-ef36914c818e 10019 127.0.0.1 10018 
+May 02 14:38:00.910 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 0 udp-de13dbe9-b3c5-456b-8a74-ef36914c818e 
+May 02 14:38:00.910 HYPERVISOR: exec_cmd: vm get_status R7 
+May 02 14:38:04.316 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+May 02 14:38:04.317 VM: VM Ghost created.
+May 02 14:38:04.317 HYPERVISOR: exec_cmd: vm set_ios Ghost /root/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+May 02 14:38:04.318 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 02 14:38:04.318 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3660-jk9o3s-mz.124-25d.image-192.ghost 
+May 02 14:38:04.319 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+May 02 14:38:04.319 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 02 14:38:04.319 HYPERVISOR: exec_cmd: vm start Ghost 
+May 02 14:38:04.583 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 02 14:38:04.584 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 02 14:38:04.759 VM: VM Ghost shutdown.
+May 02 14:38:04.760 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 02 14:38:04.760 VM: VM Ghost destroyed.
+May 02 14:38:04.760 HYPERVISOR: exec_cmd: vm set_ghost_status R7 2 
+May 02 14:38:04.761 HYPERVISOR: exec_cmd: vm set_ghost_file R7 c3660-jk9o3s-mz.124-25d.image-192.ghost 
+May 02 14:38:04.761 HYPERVISOR: exec_cmd: vm get_status R7 
+May 02 14:38:04.762 HYPERVISOR: exec_cmd: vm start R7 
+May 02 14:48:24.576 HYPERVISOR: exec_cmd: vm get_status R7 
+May 02 14:48:24.594 HYPERVISOR: exec_cmd: vm stop R7 
+May 02 14:48:24.740 VM: VM R7 shutdown.
+May 02 14:48:24.742 HYPERVISOR: exec_cmd: vm extract_config R7 
+May 02 14:48:30.275 HYPERVISOR: exec_cmd: vm get_status R7 
+May 02 14:48:30.277 HYPERVISOR: exec_cmd: vm extract_config R7 
+May 02 14:48:30.282 HYPERVISOR: exec_cmd: vm delete R7 
+May 02 14:48:30.282 VM: VM R7 destroyed.
+May 02 14:48:30.286 HYPERVISOR: exec_cmd: hypervisor stop 
+May 02 14:48:30.485 HYPERVISOR: Stopped.
+May 02 14:48:30.485 GENERAL: reset done.

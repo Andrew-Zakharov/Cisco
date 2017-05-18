@@ -1,0 +1,58 @@
+May 02 14:38:00.114 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+May 02 14:38:00.114 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 34239.
+May 02 14:38:00.172 HYPERVISOR: exec_cmd: hypervisor version 
+May 02 14:38:00.177 HYPERVISOR: exec_cmd: hypervisor working_dir /root/GNS3/projects/1/project-files/dynamips 
+May 02 14:38:00.177 GENERAL: working_dir=/root/GNS3/projects/1/project-files/dynamips
+May 02 14:38:00.192 HYPERVISOR: exec_cmd: vm create R2 5 c3600 
+May 02 14:38:00.192 VM: VM R2 created.
+May 02 14:38:00.205 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5010 
+May 02 14:38:00.208 HYPERVISOR: exec_cmd: c3600 get_mac_addr R2 
+May 02 14:38:00.213 HYPERVISOR: exec_cmd: c3600 set_chassis R2 3660 
+May 02 14:38:00.222 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+May 02 14:38:00.229 HYPERVISOR: exec_cmd: vm set_ios R2 /root/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+May 02 14:38:00.247 HYPERVISOR: exec_cmd: vm set_disk0 R2 10 
+May 02 14:38:00.261 HYPERVISOR: exec_cmd: vm set_disk1 R2 10 
+May 02 14:38:00.265 HYPERVISOR: exec_cmd: c3600 set_mac_addr R2 cc05.65da.0000 
+May 02 14:38:00.270 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+May 02 14:38:00.272 HYPERVISOR: exec_cmd: vm get_status R2 
+May 02 14:38:00.273 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+May 02 14:38:00.276 HYPERVISOR: exec_cmd: vm get_status R2 
+May 02 14:38:00.278 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 NM-1FE-TX 
+May 02 14:38:00.280 HYPERVISOR: exec_cmd: vm set_config R2 configs/i5_startup-config.cfg 
+May 02 14:38:00.709 HYPERVISOR: exec_cmd: nio create_udp udp-aef563b5-45e4-443c-8b63-8dbad2b8bf1e 10002 127.0.0.1 10003 
+May 02 14:38:00.719 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-aef563b5-45e4-443c-8b63-8dbad2b8bf1e 
+May 02 14:38:00.721 HYPERVISOR: exec_cmd: vm get_status R2 
+May 02 14:38:00.831 HYPERVISOR: exec_cmd: nio create_udp udp-58a0ef33-982b-49a4-bae1-7fb1b8f62bc2 10011 127.0.0.1 10010 
+May 02 14:38:00.832 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-58a0ef33-982b-49a4-bae1-7fb1b8f62bc2 
+May 02 14:38:00.832 HYPERVISOR: exec_cmd: vm get_status R2 
+May 02 14:38:00.841 HYPERVISOR: exec_cmd: nio create_udp udp-7dd6cf33-c1a6-44de-b6c3-2acd2b89d71c 10015 127.0.0.1 10012 
+May 02 14:38:00.847 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-7dd6cf33-c1a6-44de-b6c3-2acd2b89d71c 
+May 02 14:38:00.852 HYPERVISOR: exec_cmd: vm get_status R2 
+May 02 14:38:04.768 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+May 02 14:38:04.769 VM: VM Ghost created.
+May 02 14:38:04.769 HYPERVISOR: exec_cmd: vm set_ios Ghost /root/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+May 02 14:38:04.770 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 02 14:38:04.770 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3660-jk9o3s-mz.124-25d.image-256.ghost 
+May 02 14:38:04.771 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+May 02 14:38:04.771 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 02 14:38:04.772 HYPERVISOR: exec_cmd: vm start Ghost 
+May 02 14:38:05.045 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 02 14:38:05.046 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 02 14:38:05.215 VM: VM Ghost shutdown.
+May 02 14:38:05.216 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 02 14:38:05.216 VM: VM Ghost destroyed.
+May 02 14:38:05.217 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+May 02 14:38:05.218 HYPERVISOR: exec_cmd: vm set_ghost_file R2 c3660-jk9o3s-mz.124-25d.image-256.ghost 
+May 02 14:38:05.219 HYPERVISOR: exec_cmd: vm get_status R2 
+May 02 14:38:05.220 HYPERVISOR: exec_cmd: vm start R2 
+May 02 14:48:24.592 HYPERVISOR: exec_cmd: vm get_status R2 
+May 02 14:48:24.603 HYPERVISOR: exec_cmd: vm stop R2 
+May 02 14:48:24.755 VM: VM R2 shutdown.
+May 02 14:48:24.758 HYPERVISOR: exec_cmd: vm extract_config R2 
+May 02 14:48:30.273 HYPERVISOR: exec_cmd: vm get_status R2 
+May 02 14:48:30.276 HYPERVISOR: exec_cmd: vm extract_config R2 
+May 02 14:48:30.279 HYPERVISOR: exec_cmd: vm delete R2 
+May 02 14:48:30.279 VM: VM R2 destroyed.
+May 02 14:48:30.284 HYPERVISOR: exec_cmd: hypervisor stop 
+May 02 14:48:30.724 HYPERVISOR: Stopped.
+May 02 14:48:30.724 GENERAL: reset done.

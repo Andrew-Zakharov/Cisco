@@ -1,0 +1,69 @@
+May 01 12:56:11.630 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+May 01 12:56:11.630 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48083.
+May 01 12:56:11.644 HYPERVISOR: exec_cmd: hypervisor version 
+May 01 12:56:11.645 HYPERVISOR: exec_cmd: hypervisor working_dir /root/GNS3/projects/1/project-files/dynamips 
+May 01 12:56:11.645 GENERAL: working_dir=/root/GNS3/projects/1/project-files/dynamips
+May 01 12:56:11.645 HYPERVISOR: exec_cmd: vm create R7 11 c3600 
+May 01 12:56:11.645 VM: VM R7 created.
+May 01 12:56:11.646 HYPERVISOR: exec_cmd: vm set_con_tcp_port R7 5003 
+May 01 12:56:11.646 HYPERVISOR: exec_cmd: c3600 get_mac_addr R7 
+May 01 12:56:11.647 HYPERVISOR: exec_cmd: c3600 set_chassis R7 3660 
+May 01 12:56:11.647 HYPERVISOR: exec_cmd: vm set_ram R7 192 
+May 01 12:56:11.648 HYPERVISOR: exec_cmd: vm set_ios R7 /root/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+May 01 12:56:11.648 HYPERVISOR: exec_cmd: vm set_nvram R7 256 
+May 01 12:56:11.649 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 12:56:11.649 HYPERVISOR: exec_cmd: vm slot_add_binding R7 1 0 NM-1FE-TX 
+May 01 12:56:11.650 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 12:56:11.650 HYPERVISOR: exec_cmd: vm slot_add_binding R7 2 0 NM-1FE-TX 
+May 01 12:56:11.652 HYPERVISOR: exec_cmd: vm set_config R7 configs/i11_startup-config.cfg 
+May 01 12:56:31.819 HYPERVISOR: exec_cmd: nio create_udp udp-b84c4d69-9303-44e2-bed6-a198a5979edd 10009 127.0.0.1 10008 
+May 01 12:56:31.827 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 0 udp-b84c4d69-9303-44e2-bed6-a198a5979edd 
+May 01 12:56:31.850 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 12:56:35.445 HYPERVISOR: exec_cmd: nio create_udp udp-12586e04-b709-4a46-8b87-4d24ce5c10db 10011 127.0.0.1 10010 
+May 01 12:56:35.447 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 1 udp-12586e04-b709-4a46-8b87-4d24ce5c10db 
+May 01 12:56:35.448 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 12:56:57.226 HYPERVISOR: exec_cmd: nio create_udp udp-0f84a3cd-003c-4fcf-98b3-7dfbf2d6ed2d 10019 127.0.0.1 10018 
+May 01 12:56:57.227 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 1 0 udp-0f84a3cd-003c-4fcf-98b3-7dfbf2d6ed2d 
+May 01 12:56:57.227 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 12:57:32.034 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 12:57:36.244 HYPERVISOR: exec_cmd: vm extract_config R7 
+May 01 14:23:32.573 HYPERVISOR: exec_cmd: vm extract_config R7 
+May 01 14:37:40.641 HYPERVISOR: exec_cmd: vm extract_config R7 
+May 01 14:42:33.044 HYPERVISOR: exec_cmd: vm extract_config R7 
+May 01 14:48:34.749 HYPERVISOR: exec_cmd: vm set_ghost_status R7 2 
+May 01 14:48:34.749 HYPERVISOR: exec_cmd: vm set_ghost_file R7 c3660-jk9o3s-mz.124-25d.image-192.ghost 
+May 01 14:48:34.750 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 14:48:34.751 HYPERVISOR: exec_cmd: vm start R7 
+May 01 14:50:00.898 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 14:50:00.898 HYPERVISOR: exec_cmd: vm suspend R7 
+May 01 14:55:16.246 HYPERVISOR: exec_cmd: vm extract_config R7 
+May 01 15:20:32.749 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 15:20:32.750 HYPERVISOR: exec_cmd: vm resume R7 
+May 01 15:21:00.268 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 15:21:00.269 HYPERVISOR: exec_cmd: vm suspend R7 
+May 01 15:22:08.419 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 15:22:08.419 HYPERVISOR: exec_cmd: vm resume R7 
+May 01 15:40:12.468 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 15:40:12.468 HYPERVISOR: exec_cmd: vm suspend R7 
+May 01 15:41:02.149 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 15:41:02.150 HYPERVISOR: exec_cmd: vm resume R7 
+May 01 16:14:33.928 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 16:14:33.939 HYPERVISOR: exec_cmd: vm suspend R7 
+May 01 16:19:50.921 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 16:19:50.921 HYPERVISOR: exec_cmd: vm resume R7 
+May 01 16:53:46.440 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 16:53:46.444 HYPERVISOR: exec_cmd: vm suspend R7 
+May 01 16:57:13.107 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 16:57:13.110 HYPERVISOR: exec_cmd: vm resume R7 
+May 01 17:36:03.416 HYPERVISOR: exec_cmd: vm extract_config R7 
+May 01 17:36:04.667 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 17:36:04.668 HYPERVISOR: exec_cmd: vm stop R7 
+May 01 17:36:04.880 VM: VM R7 shutdown.
+May 01 17:36:04.885 HYPERVISOR: exec_cmd: vm extract_config R7 
+May 01 17:36:08.758 HYPERVISOR: exec_cmd: vm get_status R7 
+May 01 17:36:08.761 HYPERVISOR: exec_cmd: vm extract_config R7 
+May 01 17:36:08.765 HYPERVISOR: exec_cmd: vm delete R7 
+May 01 17:36:08.765 VM: VM R7 destroyed.
+May 01 17:36:08.768 HYPERVISOR: exec_cmd: hypervisor stop 
+May 01 17:36:09.210 HYPERVISOR: Stopped.
+May 01 17:36:09.210 GENERAL: reset done.

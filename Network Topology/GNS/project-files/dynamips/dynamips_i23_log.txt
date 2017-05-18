@@ -1,0 +1,45 @@
+May 01 14:58:25.159 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+May 01 14:58:25.159 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41055.
+May 01 14:58:25.173 HYPERVISOR: exec_cmd: hypervisor version 
+May 01 14:58:25.173 HYPERVISOR: exec_cmd: hypervisor working_dir /root/GNS3/projects/1/project-files/dynamips 
+May 01 14:58:25.173 GENERAL: working_dir=/root/GNS3/projects/1/project-files/dynamips
+May 01 14:58:25.173 HYPERVISOR: exec_cmd: vm create R9 7 c2691 
+May 01 14:58:25.173 VM: VM R9 created.
+May 01 14:58:25.174 HYPERVISOR: exec_cmd: vm set_con_tcp_port R9 5004 
+May 01 14:58:25.174 HYPERVISOR: exec_cmd: c2691 get_mac_addr R9 
+May 01 14:58:25.175 HYPERVISOR: exec_cmd: vm set_ram R9 192 
+May 01 14:58:25.175 HYPERVISOR: exec_cmd: vm set_ios R9 /root/GNS3/images/IOS/c1700-sy-mz.122-15.t17.image 
+May 01 14:58:25.176 HYPERVISOR: exec_cmd: vm set_nvram R9 256 
+May 01 14:58:25.176 HYPERVISOR: exec_cmd: vm set_disk0 R9 0 
+May 01 14:58:25.177 HYPERVISOR: exec_cmd: vm get_status R9 
+May 01 14:58:25.177 HYPERVISOR: exec_cmd: vm slot_add_binding R9 1 0 NM-1FE-TX 
+May 01 14:58:25.177 HYPERVISOR: exec_cmd: vm slot_add_binding R9 0 16 WIC-2T 
+May 01 14:58:25.178 HYPERVISOR: exec_cmd: vm set_config R9 configs/i7_startup-config.cfg 
+May 01 14:58:28.549 HYPERVISOR: exec_cmd: vm create Ghost 0 c2691 
+May 01 14:58:28.549 VM: VM Ghost created.
+May 01 14:58:28.550 HYPERVISOR: exec_cmd: vm set_ios Ghost /root/GNS3/images/IOS/c1700-sy-mz.122-15.t17.image 
+May 01 14:58:28.550 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 01 14:58:28.551 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c1700-sy-mz.122-15.t17.image-192.ghost 
+May 01 14:58:28.551 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+May 01 14:58:28.551 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 01 14:58:28.552 HYPERVISOR: exec_cmd: vm start Ghost 
+May 01 14:58:28.767 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 01 14:58:28.768 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 01 14:58:28.970 VM: VM Ghost shutdown.
+May 01 14:58:28.971 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 01 14:58:28.971 VM: VM Ghost destroyed.
+May 01 14:58:28.972 HYPERVISOR: exec_cmd: vm set_ghost_status R9 2 
+May 01 14:58:28.973 HYPERVISOR: exec_cmd: vm set_ghost_file R9 c1700-sy-mz.122-15.t17.image-192.ghost 
+May 01 14:58:28.974 HYPERVISOR: exec_cmd: vm get_status R9 
+May 01 14:58:28.975 HYPERVISOR: exec_cmd: vm start R9 
+May 01 14:58:50.107 HYPERVISOR: exec_cmd: vm get_status R9 
+May 01 14:58:50.108 HYPERVISOR: exec_cmd: vm suspend R9 
+May 01 14:58:53.369 HYPERVISOR: exec_cmd: vm get_status R9 
+May 01 14:58:53.369 HYPERVISOR: exec_cmd: vm stop R9 
+May 01 14:58:53.520 VM: VM R9 shutdown.
+May 01 14:58:53.521 HYPERVISOR: exec_cmd: vm extract_config R9 
+May 01 14:58:53.522 HYPERVISOR: exec_cmd: vm delete R9 
+May 01 14:58:53.522 VM: VM R9 destroyed.
+May 01 14:58:53.522 HYPERVISOR: exec_cmd: hypervisor stop 
+May 01 14:58:53.696 HYPERVISOR: Stopped.
+May 01 14:58:53.834 GENERAL: reset done.
